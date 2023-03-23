@@ -1,0 +1,89 @@
+.App {
+  background-image: url('https://s.wsj.net/public/resources/images/B3-GJ516_KW16_O_16H_20200324115302.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 5rem;
+  color: #fdfcfc;
+  position: relative;
+  font-weight: bolder;
+  left: 1rem; 
+  margin-top: -25rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.7);
+}
+h2 {
+  animation: flash 0.1s infinite;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+p {
+  font-size: 2rem;
+  color: #fdfdfc;
+  margin-top: .2rem;
+  font-weight: 800;
+  position: fixed;
+  text-align: left;
+  left: 1rem; 
+  overflow-wrap: normal;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  text-shadow: 0 0 10px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+}
+
+
+button {
+  background: linear-gradient(to bottom, #ff5f6d, #ffc371);
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  position: fixed;
+  text-align: right;
+  left: 90rem; 
+  margin-top: 5rem;
+}
+
+
+.flash {
+  position: absolute;
+  display: flex;
+  max-width: 37%;
+  top: 60%;
+  left: 200px; 
+  transform: translate(-50%, -50%);
+  animation: flash 2s linear infinite;
+  filter: grayscale();
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
