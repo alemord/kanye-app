@@ -27,7 +27,7 @@ function Quote() {
       ) : (
         <div className="quote-container">
         <p>"{quote}"</p>
-        <img src="./signature.png" className="flash" />
+      <img src="./signature.png" className="flash" alt="Colorful signature with a vibrant design."/>
         <button onClick={fetchQuote}>Give Me More</button>
       </div>
     )}
